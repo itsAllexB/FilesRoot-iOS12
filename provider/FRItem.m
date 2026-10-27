@@ -69,7 +69,7 @@ NSError *FRErrorFromErrno(int err, NSString *path, BOOL writing) {
 NSError *FRWriteDeniedError(NSString *path, FRPrefs *prefs) {
     NSString *msg = prefs.allowChanges
         ? [NSString stringWithFormat:@"“%@” is in a protected system location and can’t be changed with FilesRoot.", path.lastPathComponent]
-        : @"This location is read-only. Changes can be allowed in Settings > FilesRoot (dangerous).";
+        : @"This location is read-only. Changes can be allowed in Settings > Files Root (dangerous).";
     return [NSError errorWithDomain:NSCocoaErrorDomain code:NSFileWriteNoPermissionError
                            userInfo:@{ NSLocalizedDescriptionKey: msg, NSFilePathErrorKey: path ?: @"" }];
 }

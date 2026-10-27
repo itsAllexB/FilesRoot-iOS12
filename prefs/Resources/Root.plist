@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>title</key><string>FilesRoot</string>
+	<key>title</key><string>Files Root</string>
 	<key>items</key>
 	<array>
 		<dict>
@@ -50,7 +50,7 @@
 		<dict>
 			<key>cell</key><string>PSGroupCell</string>
 			<key>label</key><string>Display</string>
-			<key>footerText</key><string>Hidden files start with a dot (.bootstrapped, .DS_Store ...). Thumbnails are made for images up to 16 MB.</string>
+			<key>footerText</key><string>Hidden files start with a dot (.bootstrapped, .DS_Store ...). Thumbnails are made for JPEGs up to 4 megapixels and other images up to 1 megapixel.</string>
 		</dict>
 		<dict>
 			<key>cell</key><string>PSSwitchCell</string>

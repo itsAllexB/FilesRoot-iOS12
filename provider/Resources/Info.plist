@@ -9,9 +9,9 @@
 	<key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
 	<key>CFBundleName</key><string>FilesRootProvider</string>
 	<key>CFBundlePackageType</key><string>XPC!</string>
-	<key>CFBundleShortVersionString</key><string>1.0.1</string>
+	<key>CFBundleShortVersionString</key><string>1.0.2</string>
 	<key>CFBundleSupportedPlatforms</key><array><string>iPhoneOS</string></array>
-	<key>CFBundleVersion</key><string>2</string>
+	<key>CFBundleVersion</key><string>3</string>
 	<key>MinimumOSVersion</key><string>12.0</string>
 	<key>UIDeviceFamily</key><array><integer>1</integer><integer>2</integer></array>
 	<key>NSExtension</key>

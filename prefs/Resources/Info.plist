@@ -7,9 +7,9 @@
 	<key>CFBundleIdentifier</key><string>com.itsallexb.filesroot.prefs</string>
 	<key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
 	<key>CFBundlePackageType</key><string>BNDL</string>
-	<key>CFBundleShortVersionString</key><string>1.0.1</string>
+	<key>CFBundleShortVersionString</key><string>1.0.2</string>
 	<key>CFBundleSignature</key><string>????</string>
-	<key>CFBundleVersion</key><string>1.0.1</string>
+	<key>CFBundleVersion</key><string>1.0.2</string>
 	<key>NSPrincipalClass</key><string>FRRootListController</string>
 </dict>
 </plist>

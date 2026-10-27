@@ -18,15 +18,15 @@ The System location in the Files sidebar:
 
 | Browsing `/` | Read-only by default |
 | --- | --- |
-| <img src="screenshots/browse-root.png" alt="The root folder in the System location" width="380"> | <img src="screenshots/read-only.png" alt="Alert: This location is read-only. Changes can be allowed in Settings > FilesRoot (dangerous)." width="380"> |
+| <img src="screenshots/browse-root.png" alt="The root folder in the System location" width="380"> | <img src="screenshots/read-only.png" alt="Alert: This location is read-only. Changes can be allowed in Settings (dangerous)." width="380"> |
 
 System folders stay protected even with changes allowed (here `/usr/bin`, reached through a link):
 
 <img src="screenshots/protected.png" alt="Alert: usrbin-link is in a protected system location and can't be changed with FilesRoot." width="380">
 
-Settings > FilesRoot:
+Settings > Files Root:
 
-<img src="screenshots/settings.png" alt="FilesRoot settings page" width="420">
+<img src="screenshots/settings.png" alt="Files Root settings page" width="420">
 
 ## Features
 
@@ -57,7 +57,7 @@ FilesRoot gives the Files app access to every folder on the device. Read this be
 
 The rules are plain C in [`shared/FRPolicy.c`](shared/FRPolicy.c) and have unit tests in [`tests/policy_test.c`](tests/policy_test.c).
 
-If something goes wrong, turn off **Allow Changes** (or **Enabled**) in Settings > FilesRoot, or uninstall the package. Uninstalling removes the location and leaves your files as they are.
+If something goes wrong, turn off **Allow Changes** (or **Enabled**) in Settings > Files Root, or uninstall the package. Uninstalling removes the location and leaves your files as they are.
 
 ## Compatibility
 
@@ -83,7 +83,7 @@ Requires `mobilesubstrate` (Substrate, Substitute or libhooker) and PreferenceLo
 
 ## Settings
 
-Open **Settings > FilesRoot**:
+Open **Settings > Files Root**:
 
 - **Enabled**: shows or hides the location in Files.
 - **Name**: the name in the Files sidebar (default "System"). Close and reopen Files to see a new name.

@@ -23,7 +23,7 @@
     UILabel *label = [UILabel new];
     label.numberOfLines = 0;
     label.textAlignment = NSTextAlignmentCenter;
-    label.text = [NSString stringWithFormat:@"FilesRoot adds “%@” to Files.\n\nOpen Files > Browse. If the location is missing, tap Edit and turn it on.\nOptions are in Settings > FilesRoot.", [FRPrefs current].name];
+    label.text = [NSString stringWithFormat:@"FilesRoot adds “%@” to Files.\n\nOpen Files > Browse. If the location is missing, tap Edit and turn it on.\nOptions are in Settings > Files Root.", [FRPrefs current].name];
     label.translatesAutoresizingMaskIntoConstraints = NO;
     UIButton *files = [UIButton buttonWithType:UIButtonTypeSystem];
     [files setTitle:@"Open Files" forState:UIControlStateNormal];
