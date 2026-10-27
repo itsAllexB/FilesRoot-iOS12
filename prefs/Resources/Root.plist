@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key><string>FilesRoot</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>footerText</key><string>Adds a location to Files > Browse that shows the whole filesystem. If it is missing, tap Edit in the Browse sidebar and turn it on.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><true/>
+			<key>defaults</key><string>com.itsallexb.filesroot</string>
+			<key>key</key><string>enabled</string>
+			<key>label</key><string>Enabled</string>
+			<key>PostNotification</key><string>com.itsallexb.filesroot/prefschanged</string>
+		</dict>
+
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Location</string>
+			<key>footerText</key><string>The name is shown in the Files sidebar; close and reopen Files to see a new name. The start folder is the top of the location: the system root (/) or the mobile user's home (/var/mobile).</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSEditTextCell</string>
+			<key>default</key><string>System</string>
+			<key>defaults</key><string>com.itsallexb.filesroot</string>
+			<key>key</key><string>locationName</string>
+			<key>label</key><string>Name</string>
+			<key>placeholder</key><string>System</string>
+			<key>autoCaps</key><string>words</string>
+			<key>noAutoCorrect</key><true/>
+			<key>PostNotification</key><string>com.itsallexb.filesroot/prefschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSLinkListCell</string>
+			<key>detail</key><string>PSListItemsController</string>
+			<key>default</key><string>/</string>
+			<key>defaults</key><string>com.itsallexb.filesroot</string>
+			<key>key</key><string>startPath</string>
+			<key>label</key><string>Start Folder</string>
+			<key>validTitles</key><array><string>/ (System Root)</string><string>/var/mobile (Home)</string></array>
+			<key>validValues</key><array><string>/</string><string>/var/mobile</string></array>
+			<key>shortTitles</key><array><string>/</string><string>/var/mobile</string></array>
+			<key>PostNotification</key><string>com.itsallexb.filesroot/prefschanged</string>
+		</dict>
+
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Display</string>
+			<key>footerText</key><string>Hidden files start with a dot (.bootstrapped, .DS_Store ...). Thumbnails are made for images up to 16 MB.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.itsallexb.filesroot</string>
+			<key>key</key><string>showHidden</string>
+			<key>label</key><string>Show Hidden Files</string>
+			<key>PostNotification</key><string>com.itsallexb.filesroot/prefschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><true/>
+			<key>defaults</key><string>com.itsallexb.filesroot</string>
+			<key>key</key><string>thumbnails</string>
+			<key>label</key><string>Image Thumbnails</string>
+			<key>PostNotification</key><string>com.itsallexb.filesroot/prefschanged</string>
+		</dict>
+
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Danger Zone</string>
+			<key>footerText</key><string>DANGEROUS. Lets Files create, rename, move, delete and overwrite items in this location. Deleting or changing the wrong file can stop the iPad from booting, and on a semi-tethered jailbreak that means a restore. Changes are made as the mobile user, and system locations always stay read-only: /System, /usr, /bin, /sbin, /Library, /Applications, /etc, /var/lib, /var/db, /var/root, installed app bundles and the jailbreak's files in /. Top-level folders such as /var/mobile/Library or app data containers can't be deleted or moved. Copying files out of this location always works, even when this is off.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.itsallexb.filesroot</string>
+			<key>key</key><string>allowChanges</string>
+			<key>label</key><string>Allow Changes (dangerous)</string>
+			<key>set</key><string>setAllowChanges:specifier:</string>
+			<key>get</key><string>readPreferenceValue:</string>
+			<key>PostNotification</key><string>com.itsallexb.filesroot/prefschanged</string>
+		</dict>
+
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSButtonCell</string>
+			<key>label</key><string>Open Files</string>
+			<key>action</key><string>openFiles</string>
+		</dict>
+	</array>
+</dict>
+</plist>

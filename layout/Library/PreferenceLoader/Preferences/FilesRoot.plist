@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = FilesRootPrefs;
+		cell = PSLinkCell;
+		detail = FRRootListController;
+		icon = icon.png;
+		isController = 1;
+		label = "FilesRoot";
+	};
+}

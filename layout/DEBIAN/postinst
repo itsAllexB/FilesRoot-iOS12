@@ -1,0 +1,7 @@
+#!/bin/sh
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Register the (hidden) host app so LaunchServices / PlugInKit see the File Provider extension,
+# then restart fileproviderd so Files picks the location up without a respring.
+uicache -p /Applications/FilesRoot.app >/dev/null 2>&1 || uicache >/dev/null 2>&1
+killall -9 fileproviderd >/dev/null 2>&1
+exit 0

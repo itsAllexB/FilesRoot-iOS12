@@ -1,0 +1,9 @@
+Package: com.itsallexb.filesroot
+Name: FilesRoot (iOS 12)
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: Adds a "System" location to the Files app sidebar that browses the whole filesystem (/) of a jailbroken device. Preview with Quick Look, copy files out to On My iPad, and open them in other apps. Read-only by default; changes can be allowed in Settings > FilesRoot, with system folders always protected.
+Maintainer: itsAllexB
+Author: itsAllexB
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader, firmware (>= 12.0), firmware (<< 13.0)

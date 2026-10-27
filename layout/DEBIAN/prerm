@@ -1,0 +1,6 @@
+#!/bin/sh
+# SPDX-License-Identifier: GPL-3.0-or-later
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+    uicache -u /Applications/FilesRoot.app >/dev/null 2>&1
+fi
+exit 0
